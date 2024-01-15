@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+img{
+    cursor: pointer;
+}
+html{
+    font-size: 100%;
+}
+h1{
+    font-weight: 1000;
+}
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: #fb774b;
+}
+.star{
+   padding: 10px 0;
+}
+.star i{
+    color: goldenrod;
+    font-size: 0.8rem;
+}
+body{
+    background-color: #ecebeb;
+}
+button{
+    border: none;
+    outline: none;
+    font-size: .8rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: #1d1d1d;
+    color: white;
+    padding: 13px 30px;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: coral;
+    transition: all linear .4s;
+}
+.navbar .container{
+    background-color: #fff;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+    color: coral;
+}
+body > nav > div > img{
+    padding-left: 1rem;
+}
+body > nav > div > button{
+    background-color: coral;
+    margin-right: .6rem;
+}
+body > nav{
+    box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .3);
+}
+.active{
+    color: #fb774b;
+}
+
+@media(max-width: 988px){
+    html{
+        font-size: 60%;
+    }
+    #navbarSupportedContent > ul > li{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1.3rem;
+        font-size: 1rem;
+    }
+    body > nav > div > img{
+        width: 6.5rem;
+    }
+    .contact form .inputBox input, select{
+        width: 100%;
+    }
+    .contact form .inputBox select{
+        width: 100%;
+    }
+    .contact .inputBox .button button{
+        width: 100%;
+    }
+}
+#home{
+    display: flex;
+    align-items: center;
+    background: url(images/back.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+}
+#home .shop h5{
+    font-size: 1rem;
+    font-weight: 500;
+}
+#home .shop h1{
+    font-size: 3rem; 
+}
+#home .shop span{
+    color: coral;
+}
+#new .one img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#new .one .details{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3 ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178, 178, 0.7);
+}
+#new .one .details button{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    background: none;
+    border-bottom: 1px solid #2a2a2a;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    padding: 2.5px;
+    transform: translateY(70px);
+}
+#new .one .details button:hover{
+    color: #fff;
+    border-bottom:1px solid #fff;
+}
+#new > div > div:nth-child(1) > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#new > div > div:nth-child(2) > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new > div > div:nth-child(3) > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    transition: 0.3s all;
+    margin-top: 3rem;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .buy-btn{
+    background-color: #fb774b;
+    transform: translateY(20px);
+    transition: 0.3s all;
+    opacity: 0;
+}
+.product:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+#banner{
+    display: flex;
+    align-items: center;
+    background: url(images/banner/2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 60vh;
+    background-attachment: fixed;   
+}
+#banner button{
+    background-color: #fb774b;
+    color: #fff;
+    opacity: .7;
+    transition: 0.3s ease;
+}
+#banner button:hover{
+    opacity: 1;
+}
+#banner h4{
+    color: #D8D8D8;
+}
+#banner h1{
+    color: #fff;
+}
+#footer > div > div:nth-child(3) > div:nth-child(3) > h5 > p{
+    font-weight: lighter;
+}
+.footer{
+    background-color: #222222;
+}
+footer h4{
+    color: #D8D8D8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer p{
+    color: #999;
+}
+footer li{
+    padding-bottom: 8px;
+}
+footer li a{
+    color: #999;
+    font-size: .8rem;
+}
+#footer > div > div:nth-child(2) > ul > li > a{
+    list-style: none;
+    text-decoration: none;
+}
+#footer > div > div:nth-child(2) > ul > li > a:hover{
+    color: #fb774b;
+}
+footer h5{
+    color: #D8D8D8;
+    font-weight: 300;
+    cursor: pointer;
+}
+#footer > div > div.copyright.mt-5 > div > div:nth-child(3) > a:nth-child(n) > i{
+    background-color: #ecebeb;
+    color: #1d1d1d;
+}
+#footer i{
+    background-color: #fff;
+    color: #1d1d1d;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 4px 3px;
+}
+#footer i:hover{
+    background-color: #fb774b;
+    color: #fff;
+}
+/* BLOG */
+#blog-home .post .post-img{
+    overflow: hidden;
+}
+#blog-home .post img{
+    transition: 0.3s ease;
+}
+#blog-home .post img:hover{
+    transform: scale(1.3);
+    opacity: .8;
+}
+
+/* CART */
+#cart-container{
+    overflow-x: auto;
+}
+#cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart-container table thead{
+    font-weight: 700;
+}
+#cart-container table thead td{
+    background-color: #fb774b;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+}
+#cart-container table td{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+}
+#cart-container table td:nth-child(1){
+    width: 100px;
+}
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3){
+    width: 200px;
+}
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6){
+    width: 170px;
+}
+#cart-container table img{
+    width: 100px;
+    height: 80px;
+}
+.coupon > div{
+    border: 1px solid #b6b3b3;
+    
+}
+#cart-bottom .coupon h5{
+    background-color: #fb774b;
+    color: #fff;
+    border: none;
+    padding: .7rem;
+}
+#cart-bottom .coupon p{
+    padding-left: .7rem;
+}
+#cart-bottom .coupon input{
+    padding: .5rem;
+    margin-left: .7rem;
+    outline: none;
+}
+#cart-bottom > div > div:nth-child(2) > div > hr{
+    width: 100%;
+    height: 1px;
+    background-color: #b6b3b3;
+}
+#checkout-btn{
+    display: flex;
+    justify-content: end;
+    padding: .7rem 1rem;
+}
+
+/* Contact */
+.contact h1{
+    color: #1d1d1d;
+}
+.contact .inputBox{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .inputBox input{
+    width: 49%;
+    height: 4rem;
+    padding: 0rem 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+.contact .inputBox select{
+    width: 49%;
+    height: 4rem;
+    padding: 0rem 1rem;
+    margin:1rem 0 ;
+    font-size: 2rem;
+}
+.contact .inputBox textarea{
+    width: 98%;
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.contact .inputBox .button{
+    text-align: center;
+    width: 20rem;
+    text-align: center;
+}
